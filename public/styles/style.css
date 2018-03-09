@@ -526,11 +526,18 @@ template {
   display: none; }
 
 body {
+  font-family: "Fira Sans", sans-serif;
   font-size: 16px; }
+
+h1 {
+  font-family: "Amatic SC", cursive; }
+
+.section_number {
+  font-family: "Fira Sans", sans-serif; }
 
 .container {
   max-width: 900px;
   margin: 0 auto; }
 
-body {
-  background: red; }
+* {
+  outline: 1px solid red; }
