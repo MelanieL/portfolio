@@ -1,3 +1,28 @@
 .green_link {
-    font-weight: 400;
+    background: -webkit-linear-gradient(0deg, #96d73a 0%, #71c000 100%);
+    background: -moz-linear-gradient(0deg, #96d73a 0%, #71c000 100%);
+    background: -o-linear-gradient(0deg, #96d73a 0%, #71c000 100%);
+    background: -ms-linear-gradient(0deg, #96d73a 0%, #71c000 100%);
+    background: linear-gradient(90deg, #96d73a 0%, #71c000 100%);
+    box-shadow: 0px 10px 27px 0px rgba(145, 218, 41, 0.27);
+    border-radius: 50px;
+    color: $color1;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 16px 0px;
+    text-align: center;
+}
+
+.green_link:hover,
+.green_link:active {
+    background: -webkit-linear-gradient(0deg, #71b115 0%, #579300 100%);
+    background: -moz-linear-gradient(0deg, #71b115 0%, #579300 100%);
+    background: -o-linear-gradient(0deg, #71b115 0%, #579300 100%);
+    background: -ms-linear-gradient(0deg, #71b115 0%, #579300 100%);
+    background: linear-gradient(90deg, #71b115 0%, #579300 100%);
+    box-shadow: 0px 10px 27px 0px rgba(145, 218, 41, 0.27);
+}
+
+.resume_link {
+    width: 210px;
 }

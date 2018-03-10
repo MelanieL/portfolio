@@ -3,6 +3,14 @@
 @import 'components/typography';
 @import 'components/ui';
 
+body {
+	background: $color1;
+}
+
+* {
+	outline: 1px solid red;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -11,11 +19,14 @@
 	width: 80%;
 }
 
-* {
-	outline: 1px solid red;
-}
-
 // This is where the stying for the header section begins
+
+header {
+	height: 100vh;
+	// Deviated from design:
+	// padding-top: 88px;
+	padding-top: 44px;
+}
 
 header .wrapper {
 	align-items: center;
@@ -25,9 +36,6 @@ ul {
 	list-style: none;
 }
 
-header {
-	padding-top: 88px;
-}
 
 header h3 {
 	// margin: 0px 188px;
@@ -48,6 +56,7 @@ header h3 {
 nav, ul {
 	display: flex;
 	flex-direction: row;
+	height: 10vh;
 }
 
 nav {
@@ -73,6 +82,32 @@ li a {
 .header__navul__right {
 	text-align: left;
 }
+
+.header__herodiv {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	background-image: url("../images/image_header_shapes.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 80vh;
+	width: 100%;
+}
+
+.header__herodiv__content {
+	display: flex;
+	flex-direction: column;	// height: 50%;
+	text-align: center;
+	width: 35%;	
+}
+
+.header__herodiv__content h5 {
+	margin: 20px 0px 60px 0px;
+}
+
+
 
 
 
