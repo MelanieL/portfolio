@@ -526,18 +526,129 @@ template {
   display: none; }
 
 body {
+  color: #000;
   font-family: "Fira Sans", sans-serif;
-  font-size: 16px; }
+  font-size: 18px;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a {
+  margin: 0;
+  padding: 0; }
 
 h1 {
+  font-size: 106px; }
+
+.section_number {
+  color: #f1f1f1;
+  font-size: 239px;
+  font-weight: 500; }
+
+h2 {
+  font-size: 90px; }
+
+h3 {
+  border-bottom: 1px solid #000;
+  color: #7CBF1D;
+  font-size: 70px;
+  padding-bottom: 8px; }
+
+h4 {
+  color: #585858;
+  font-size: 22px; }
+
+h5 {
+  font-size: 18px; }
+
+h1, h3 {
   font-family: "Amatic SC", cursive; }
 
 .section_number {
   font-family: "Fira Sans", sans-serif; }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto; }
+a {
+  color: #000;
+  text-decoration: none; }
+
+header li a {
+  border-bottom: 1px solid #000;
+  color: #585858;
+  padding-bottom: 8px; }
+
+header li a:hover,
+header li a:active {
+  border-bottom: none;
+  color: #7CBF1D; }
+
+.green_link {
+  font-weight: 400; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1250px;
+  margin: 0 auto;
+  width: 80%; }
 
 * {
   outline: 1px solid red; }
+
+header .wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+ul {
+  list-style: none; }
+
+header {
+  padding-top: 88px; }
+
+header h3 {
+  margin: 0px 94px; }
+
+.header__smtitlediv {
+  position: relative; }
+
+.header__smtitlediv__triangleimgdiv {
+  left: 108px;
+  position: absolute;
+  top: 82px; }
+
+nav, ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+
+li,
+li a {
+  width: 100%; }
+
+.header__navul__left {
+  text-align: right; }
+
+.header__navul__right {
+  text-align: left; }

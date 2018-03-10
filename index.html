@@ -6,30 +6,36 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Melanie Phillips</title>
 	<link rel="stylesheet" href="./public/styles/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Fira+Sans:300,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Fira+Sans:300,400,500" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 <body>
 	<header>
 		<div class="wrapper">
 			<nav>
-				<ul>
+				<ul class="header__navul__left">
 					<li><a href="#about">About</a></li>
 					<li><a href="#skills">Skills</a></li>
-				</ul>
-				<h3 class="title_font">MP</h3>
-				<ul>
 					<li><a href="#work">Work</a></li>
+				</ul>
+				<div class="header__smtitlediv">
+					<h3 class="title_font">MP</h3>
+					<div class="header__smtitlediv__triangleimgdiv">
+						<img src="public/images/image_header_triangle.png" alt="">
+					</div>
+				</div>
+				<ul class="header__navul__right">
 					<li><a href="#blog">Blog</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="">French Site</a></li>					
 				</ul>
 			</nav>
 			<div class="header__shapesimgdiv">
 				<img src="public/images/image_header_shapes.png" alt="floating icons of leaves and triangles on both sides of the heading">
 			</div>
 			<h1>MELANIE PHILLIPS</h1>
-			<h6>Web Developer</h6>
-			<a class="button" href="/public/downloads/resume.pdf" download>RESUME.PDF</a>
+			<h5>Web Developer</h5>
+			<a class="green_link" href="/public/downloads/resume.pdf" download><i class="fas fa-arrow-circle-down"></i> RESUME.PDF</a>
 		</div>
 	</header>
 	
@@ -175,6 +181,7 @@
 					<div class="work__projectimgdiv__imgdiv">
 						<img src="public/images/image_psd.png" alt="computer screen with an image of my psd conversion">
 					</div>
+					<h4>PSD Conversion - OVER</h4>
 					<div class="label_language">HTML</div>
 					<div class="label_language">CSS</div>
 					<div class="label_language">RESPONSIVE</div>
@@ -185,6 +192,7 @@
 					<div class="work__projectimgdiv__imgdiv">
 						<img src="public/images/image_quiz.png" alt="computer screen with an image of my space quiz project">
 					</div>
+					<h4>Quiz - A Ship to Call Home</h4>
 					<div class="label_language">JAVASCRIPT</div>
 					<div class="label_language">JQUERY</div>
 					<div class="label_language">RESPONSIVE</div>
@@ -195,13 +203,14 @@
 					<div class="work__projectimgdiv__imgdiv">
 						<img src="public/images/image_movie.png" alt="computer screen with an image of my movie watchlist project">
 					</div>
-				</div>
+					<h4>Web App - Movie Watchlist</h4>
 					<div class="label_language">API</div>
 					<div class="label_language">REACT</div>
 					<div class="label_language">FIREBASE</div>
 					<div class="label_language">COLLABORATIVE</div>
 					<p>Web app that allows the user to search store movie selections.</p>
 					<a class="green_link" href="">VIEW LIVE</a>
+				</div>
 		</div>
 	</section>
 

@@ -1,18 +1,79 @@
 @import 'components/normalize';
 @import 'components/base';
 @import 'components/typography';
+@import 'components/ui';
 
-.container {
-	max-width: 900px;
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 1250px;
 	margin: 0 auto;
+	width: 80%;
 }
 
 * {
 	outline: 1px solid red;
 }
 
-// This is the line under each heading section
-// .heading_underline {
+// This is where the stying for the header section begins
 
-// }
+header .wrapper {
+	align-items: center;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	padding-top: 88px;
+}
+
+header h3 {
+	// margin: 0px 188px;
+	// Deviated from design:
+	margin: 0px 94px;
+}
+
+.header__smtitlediv {
+	position: relative;
+}
+
+.header__smtitlediv__triangleimgdiv {
+	left: 108px;
+	position: absolute;
+	top: 82px;
+}
+
+nav, ul {
+	display: flex;
+	flex-direction: row;
+}
+
+nav {
+	display: flex;
+	width: 100%;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+li,
+li a {
+	width: 100%;
+}
+
+.header__navul__left {
+	text-align: right;
+}
+
+.header__navul__right {
+	text-align: left;
+}
+
+
+
 
