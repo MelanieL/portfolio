@@ -539,12 +539,15 @@ h1 {
   font-size: 106px; }
 
 .section_number {
+  border-bottom: 1px solid #000;
   color: #f1f1f1;
-  font-size: 239px;
-  font-weight: 500; }
+  font-size: 150px;
+  font-weight: 500;
+  text-align: center; }
 
 h2 {
-  font-size: 90px; }
+  font-family: "Amatic SC", cursive;
+  font-size: 50px; }
 
 h3 {
   border-bottom: 1px solid #000;
@@ -609,6 +612,9 @@ body {
   outline: 1px solid red; }
 
 .wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,14 +626,23 @@ body {
   margin: 0 auto;
   width: 80%; }
 
+.section_heading {
+  padding-top: 15px;
+  position: relative; }
+
+.section_heading h1 {
+  line-height: 0.68; }
+
+.section_heading h2 {
+  bottom: 15px;
+  position: absolute; }
+
+.subtitle {
+  margin: 20px 0; }
+
 header {
   height: 100vh;
   padding-top: 44px; }
-
-header .wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
 
 ul {
   list-style: none; }
@@ -712,3 +727,61 @@ li a {
 
 .header__herodiv__content h5 {
   margin: 20px 0px 60px 0px; }
+
+.about {
+  background-image: url("../images/image_about_shapes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh; }
+
+.section_heading h2 {
+  left: -10px; }
+
+.about__maindiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: -90px;
+  position: relative;
+  width: 80%; }
+
+.about__maindiv__textdiv {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80%;
+  left: -88px;
+  position: absolute;
+  width: 70%; }
+
+.about__maindiv__textdiv__falseborder {
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  height: 100%;
+  width: 13.5%; }
+
+.about__maindiv__textdiv__ps {
+  margin-left: -40px;
+  width: 85%; }
+
+.about__maindiv__textdiv__ps p {
+  margin: 3% 0px; }
+
+.about__maindiv__imgdiv {
+  width: 100%; }
+
+.about__maindiv__imgdiv img {
+  width: 100%; }
