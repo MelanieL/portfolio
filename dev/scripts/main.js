@@ -1,3 +1,14 @@
-const ohHey = "Hello World";
+const app = {};
 
-console.log(ohHey);
+app.events = function () {
+    $('a').smoothScroll();
+};
+
+app.init = function () {
+    app.events();
+};
+
+$(function () {
+    app.init();
+});
+

@@ -1,5 +1,15 @@
-"use strict";
+'use strict';
 
-var ohHey = "Hello World";
+var app = {};
 
-console.log(ohHey);
+app.events = function () {
+    $('a').smoothScroll();
+};
+
+app.init = function () {
+    app.events();
+};
+
+$(function () {
+    app.init();
+});
