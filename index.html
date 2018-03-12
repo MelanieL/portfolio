@@ -8,6 +8,24 @@
 	<link rel="stylesheet" href="./public/styles/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Fira+Sans:300,400,500" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="57x57" href="public/images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="public/images/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="public/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="public/images/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="public/images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="public/images/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="public/images/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="public/images/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="public/images/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="public/images/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="public/images/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="public/images/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="public/images/android-chrome-192x192.png" sizes="192x192">
+	<meta name="msapplication-square70x70logo" content="public/images/smalltile.png" />
+	<meta name="msapplication-square150x150logo" content="public/images/mediumtile.png" />
+	<meta name="msapplication-wide310x150logo" content="public/images/widetile.png" />
+	<meta name="msapplication-square310x310logo" content="public/images/largetile.png" />
 </head>
 <body>
 	<header id="home">
@@ -405,20 +423,20 @@
 					</a>
 				</div>
 			</div>
-			<form class="contact__form" action="">
+			<form class="contact__form" action="https://formspree.io/melanie@melaniephillips.io" method="POST">
 				<div class="contact__form__contactbar">
 					<div class="contact__form__namefield">
 						<input type="text" id="name" name="user_name" placeholder="Your name *" required>
 					</div>
 					<div class="contact__form__emailfield">
-						<input type="email" id="emailAddress" name="email" placeholder="E-mail *" required>
+						<input type="email" id="emailAddress" name="_replyto" placeholder="E-mail *" required>
 					</div>
 				</div>
 				<div class="contact__form__messagefield">
 					<textarea name="textarea" rows="10" cols="50" placeholder="Your message here *" required></textarea>
 				</div>
 				<p class="form_required_line"><span class="green">*</span> - required</p>
-				<button class="green_link" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+				<button class="green_link" type="submit" value=""Send><i class="fas fa-paper-plane"></i> Send</button>
 			</form>
 			<div class="scroll_icons_div">
 				<a href="#blog">
