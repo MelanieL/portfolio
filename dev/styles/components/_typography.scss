@@ -77,3 +77,10 @@ header li a:active {
 
 }
 
+.blog__blogpostdiv a:hover,
+.blog__blogpostdiv a:active {
+    color: $color4;
+	text-decoration: none;
+}
+
+

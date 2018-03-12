@@ -275,6 +275,7 @@ li a {
 }
 
 .work__projectdiv {
+	height: 100%;
 	width: 25%;
 }
 
@@ -306,7 +307,9 @@ li a {
 }
 
 .work__projectdiv p {
+	height: 13%;
 	margin-bottom: 5%;
+	text-align: center;
 }
 
 .view_live {
@@ -316,6 +319,44 @@ li a {
 	width: 50%;
 }
 
-.view_live_mt {
-	margin-top: 11%;
+// This is where styling begins for blog section
+
+.blog {
+	height: 100vh;
 }
+
+.blog .wrapper {
+	height: 95vh;
+}
+
+.blog .section_heading h2 {
+	left: 12px;
+}
+
+.blog__articledivfull {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.blog__blogpostdiv {
+	margin-bottom: 5%;
+	width: 30%;
+}
+
+.blog__blogpostdiv__imgdiv {
+	margin-bottom: 5%;
+	width: 100%;
+}
+
+.blog__blogpostdiv__imgdiv img {
+	border: 1px solid $color5;
+	width: 100%;
+}
+
+.blog__blogpostdiv a {
+	color: $color5;
+	line-height: 36px;
+	text-decoration: underline;
+}
+
