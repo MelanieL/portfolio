@@ -588,6 +588,10 @@ header li a:active {
   color: #7CBF1D;
   text-decoration: none; }
 
+.blog__hiddenlink a:hover,
+.blog__hiddenlink a:active {
+  color: #FFF; }
+
 .green_link {
   background: -webkit-gradient(linear, left top, right top, from(#96d73a), to(#71c000));
   background: linear-gradient(90deg, #96d73a 0%, #71c000 100%);
@@ -1022,13 +1026,47 @@ li a {
 
 .blog__blogpostdiv__imgdiv {
   margin-bottom: 5%;
+  position: relative;
   width: 100%; }
 
+.blog__blogpostdiv__imgdiv:hover img,
+.blog__blogpostdiv__imgdiv:active img {
+  opacity: 0.3; }
+
+.blog__blogpostdiv__imgdiv:hover .middle,
+.blog__blogpostdiv__imgdiv:active .middle {
+  opacity: 1; }
+
 .blog__blogpostdiv__imgdiv img {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   border: 1px solid #585858;
+  display: block;
+  height: auto;
+  opacity: 1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   width: 100%; }
+
+.middle {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50%; }
 
 .blog__blogpostdiv a {
   color: #585858;
   line-height: 36px;
   text-decoration: underline; }
+
+.blog__hiddenlink a {
+  color: #FFF;
+  text-decoration: none;
+  width: 100%; }

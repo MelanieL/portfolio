@@ -83,4 +83,12 @@ header li a:active {
 	text-decoration: none;
 }
 
+.blog__hiddenlink a:hover,
+.blog__hiddenlink a:active {
+	// background: $color4;
+	color: $color1;
+	// padding: 16px 32px;
+	// text-decoration: none;
+}
+
 
