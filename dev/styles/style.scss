@@ -340,7 +340,9 @@ li a {
 }
 
 .blog__blogpostdiv {
+	border-bottom: 1px dotted $color2;
 	margin-bottom: 5%;
+	padding-bottom: 1.5%;
 	width: 30%;
 }
 
@@ -394,3 +396,107 @@ li a {
 	text-decoration: none;
 	width: 100%;
 }
+
+// This is where the styling begins for the contact section
+
+.contact {
+	height: 100vh;
+}
+
+.contact .wrapper {
+	height: 100vh;
+}
+
+.contact__methodbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 60%;
+}
+
+.contact__methodbar__methoddiv {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+}
+
+.contact__methoddiv__imgdiv {
+	margin-right: 3%;
+}
+
+.contact form {
+	align-items: center;
+	border: 1px solid $color2;
+	display: flex;
+	flex-direction: column;
+	height: 50vh;
+	justify-content: center;
+	margin-top: 3%;
+	width: 70%;
+}
+
+.contact__form__contactbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 2%;
+	width: 90%;
+}
+
+.contact__form__namefield,
+.contact__form__emailfield {
+	width: 40%;
+}
+
+
+.contact__form__namefield,
+.contact__form__emailfield,
+.contact__form__messagefield {
+	border: 1px solid $color2;
+}
+
+.contact__form__messagefield {
+	height: 150px;
+	width: 90%;
+}
+
+textarea {
+	border: none;
+}
+
+.contact__form__messagefield textarea {
+	height: 100%;
+	width: 100%;
+}
+
+.form_required_line {
+	padding-top: 10px;
+	width: 90%;
+}
+
+form button {
+	width: 150px;
+}
+
+// This is where footer styling begins
+
+footer .wrapper {
+	border-top: 1px dotted $color2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 5%;
+	padding-top: 2%;
+}
+
+footer svg {
+	background: $color1;
+	color: $color4;
+}
+
+.footer__smdiv a {
+	margin: 10px;
+}
+
+// Add dotted lines above

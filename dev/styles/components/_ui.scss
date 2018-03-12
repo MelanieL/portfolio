@@ -13,6 +13,7 @@
     text-align: center;
 }
 
+
 .green_link:hover,
 .green_link:active {
     background: -webkit-linear-gradient(0deg, #71b115 0%, #579300 100%);
@@ -21,6 +22,11 @@
     background: -ms-linear-gradient(0deg, #71b115 0%, #579300 100%);
     background: linear-gradient(90deg, #71b115 0%, #579300 100%);
     box-shadow: 0px 10px 27px 0px rgba(145, 218, 41, 0.27);
+}
+
+footer svg:hover,
+footer svg:active {
+    color: $color7;
 }
 
 .resume_link {

@@ -36,7 +36,6 @@ h2 {
 
 h3 {
     border-bottom: 1px solid $color2;
-    color: $color4;
     font-size: 70px;
     padding-bottom: 8px;
 }
@@ -85,10 +84,27 @@ header li a:active {
 
 .blog__hiddenlink a:hover,
 .blog__hiddenlink a:active {
-	// background: $color4;
 	color: $color1;
-	// padding: 16px 32px;
-	// text-decoration: none;
+}
+
+.contact__methodbar__methoddiv a {
+    color: $color5;
+    text-decoration: underline;
+}
+
+.green {
+    color: $color4;
+}
+
+input,
+textarea {
+    font-family: $body-font;
+    padding: 10px;
+    width: 100%;
+}
+
+footer h3 {
+    border-bottom: none;
 }
 
 
