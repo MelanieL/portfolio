@@ -10,7 +10,7 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 <body>
-	<header>
+	<header id="home">
 		<div class="wrapper">
 			<nav>
 				<ul class="header__navul__left">
@@ -64,12 +64,19 @@
 					</div>
 				</div>
 				<div class="about__maindiv__imgdiv">
-					<img src="public/images/image_algonquin_flipped.jpg" alt="">
+					<img src="public/images/image_algonquin_flipped.jpg" alt="me standing in front of lake covered in mist and a travel coffee in my hand">
 				</div>
 			</div>
-			<!-- <div class="about__shapesimgdiv">
-				<img src="public/images/image_section1_shapes.png" alt="decorative floating triangles">
-			</div> -->
+			<div class="scroll_icons_div">
+				<a href="#home">
+					<div class="up_arrow_imgdiv">
+					</div>
+				</a>
+				<a href="#skills">			
+					<div class="down_arrow_imgdiv">
+					</div>
+				</a>
+			</div>
 		</div>
 	</section>
 	
@@ -79,96 +86,162 @@
 				<h1 class="section_number">2</h1>
 				<h2>SKILLS</h2>
 			</div>
-			<p class="subtitle">I know...</p>
-			<div class="skills__languagediv">
-				<i class="fab fa-js"></i>
-				<p class="skills__languageicontext">JAVASCRIPT</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-react"></i>
-				<p class="skills__languageicontext">REACT</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-jquery"></i>
-				<p class="skills__languageicontext">JQUERY</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-github"></i>
-				<p class="skills__languageicontext">GITHUB</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-git"></i>
-				<p class="skills__languageicontext">GIT</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-gulp"></i>
-				<p class="skills__languageicontext">GULP</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-sass"></i>
-				<p class="skills__languageicontext">SASS</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-firebase"></i>
-				<p class="skills__languageicontext">FIREBASE</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-css"></i>
-				<p class="skills__languageicontext">CSS</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-html"></i>
-				<p class="skills__languageicontext">HTML</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-vscode"></i>
-				<p class="skills__languageicontext">VS CODE</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-sublime"></i>
-				<p class="skills__languageicontext">SUBLIME</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-atom"></i>
-				<p class="skills__languageicontext">ATOM</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-terminal"></i>
-				<p class="skills__languageicontext">TERMINAL</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-responsive"></i>
-				<p class="skills__languageicontext">RESPONSIVE</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-sketch"></i>
-				<p class="skills__languageicontext">SKETCH</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-french"></i>
-				<p class="skills__languageicontext">FRENCH</p>
+
+			<div class="skills__div">
+				<div class="skills__know">
+					<p class="subtitle">I know...</p>
+					<div class="skills__know__grid">
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-js fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">JAVASCRIPT</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-react fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">REACT</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<img src="public/images/icon_jquery.png" alt="jquery icon">
+							</div>
+							<p class="skills__languageicontext">JQUERY</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-github fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">GITHUB</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-git fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">GIT</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-gulp fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">GULP</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-sass fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">SASS</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder skills_imgicon_padding">
+								<img src="public/images/icon_firebase.png" alt="firebase icon">								
+							</div>
+							<p class="skills__languageicontext">FIREBASE</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-css3-alt fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">CSS</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-html5 fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">HTML</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder skills_imgicon_padding">
+								<img src="public/images/icon_vscode.png" alt="vscode icon">
+							</div>
+							<p class="skills__languageicontext">VS CODE</p>
+						</div>
+						<!-- <div class="skills__languagediv">
+							<i class="fab fa-sublime"></i>
+							<p class="skills__languageicontext">SUBLIME</p>
+						</div> -->
+						<!-- <div class="skills__languagediv">
+							<i class="fab fa-atom"></i>
+							<p class="skills__languageicontext">ATOM</p>
+						</div> -->
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fas fa-terminal fa-lg"></i>
+							</div>
+							<p class="skills__languageicontext">TERMINAL</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fas fa-mobile-alt fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">RESPONSIVE</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder skills_imgicon_padding">
+								<img src="public/images/icon_sketch.png" alt="sketch icon">								
+							</div>
+							<p class="skills__languageicontext">SKETCH</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder skills_imgicon_padding">
+								<img src="public/images/icon_bem.png" alt="bem icon">								
+							</div>
+							<p class="skills__languageicontext">BEM</p>
+						</div>
+
+						<!-- <div class="skills__languagediv">							<i class="fab fa-french"></i>
+							<p class="skills__languageicontext">FRENCH</p>
+						</div> -->
+					</div>
+				</div>
+	
+				<div class="skills__tolearn">
+					<p class="subtitle">I want to learn...</p>
+					<div class="skills__tolearn__grid">
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-angular fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">ANGULAR</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-vuejs fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">VUE.JS</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-python fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">PYTHON</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder">
+								<i class="fab fa-node fa-2x"></i>
+							</div>
+							<p class="skills__languageicontext">NODE.JS</p>
+						</div>
+						<div class="skills__languagediv">
+							<div class="skills__languagediv__iconborder skills_imgicon_padding">
+								<img src="public/images/icon_ruby.png" alt="ruby icon">								
+							</div>
+							<p class="skills__languageicontext">RUBY</p>
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<p>I want to learn...</p>
-			<div class="skills__languagediv">
-				<i class="fab fa-angular"></i>
-				<p class="skills__languageicontext">ANGULAR</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-vuejs"></i>
-				<p class="skills__languageicontext">VUE.JS</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-python"></i>
-				<p class="skills__languageicontext">PYTHON</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-node"></i>
-				<p class="skills__languageicontext">NODE.JS</p>
-			</div>
-			<div class="skills__languagediv">
-				<i class="fab fa-ruby"></i>
-				<p class="skills__languageicontext">RUBY</p>
+			<div class="scroll_icons_div">
+				<a href="#about">
+					<div class="up_arrow_imgdiv">
+					</div>
+				</a>
+				<a href="#work">
+					<div class="down_arrow_imgdiv">
+					</div>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -183,40 +256,50 @@
 				<img src="public/images/image_work_shapes.png" alt="">
 			</div>
 			<p class="subtitle">Some things I've been working on...</p>
-				<div class="work__projectdiv work__psd">
-					<div class="work__projectimgdiv__imgdiv">
-						<img src="public/images/image_psd.png" alt="computer screen with an image of my psd conversion">
-					</div>
-					<h4>PSD Conversion - OVER</h4>
-					<div class="label_language">HTML</div>
-					<div class="label_language">CSS</div>
-					<div class="label_language">RESPONSIVE</div>
-					<p>Responsive design replicated from a PSD file.</p>
-					<a class="green_link" href="">VIEW LIVE</a>
+			<div class="work__projectdiv work__psd">
+				<div class="work__projectimgdiv__imgdiv">
+					<img src="public/images/image_psd.png" alt="computer screen with an image of my psd conversion">
 				</div>
-				<div class="work__projectdiv work__quiz">
-					<div class="work__projectimgdiv__imgdiv">
-						<img src="public/images/image_quiz.png" alt="computer screen with an image of my space quiz project">
-					</div>
-					<h4>Quiz - A Ship to Call Home</h4>
-					<div class="label_language">JAVASCRIPT</div>
-					<div class="label_language">JQUERY</div>
-					<div class="label_language">RESPONSIVE</div>
-					<p>Quiz that tells the user the pop culture space ship where they would feel the most at home.</p>
-					<a class="green_link" href="">VIEW LIVE</a>
+				<h4>PSD Conversion - OVER</h4>
+				<div class="label_language">HTML</div>
+				<div class="label_language">CSS</div>
+				<div class="label_language">RESPONSIVE</div>
+				<p>Responsive design replicated from a PSD file.</p>
+				<a class="green_link" href="">VIEW LIVE</a>
+			</div>
+			<div class="work__projectdiv work__quiz">
+				<div class="work__projectimgdiv__imgdiv">
+					<img src="public/images/image_quiz.png" alt="computer screen with an image of my space quiz project">
 				</div>
-				<div class="work__projectdiv work__movie">
-					<div class="work__projectimgdiv__imgdiv">
-						<img src="public/images/image_movie.png" alt="computer screen with an image of my movie watchlist project">
-					</div>
-					<h4>Web App - Movie Watchlist</h4>
-					<div class="label_language">API</div>
-					<div class="label_language">REACT</div>
-					<div class="label_language">FIREBASE</div>
-					<div class="label_language">COLLABORATIVE</div>
-					<p>Web app that allows the user to search store movie selections.</p>
-					<a class="green_link" href="">VIEW LIVE</a>
+				<h4>Quiz - A Ship to Call Home</h4>
+				<div class="label_language">JAVASCRIPT</div>
+				<div class="label_language">JQUERY</div>
+				<div class="label_language">RESPONSIVE</div>
+				<p>Quiz that tells the user the pop culture space ship where they would feel the most at home.</p>
+				<a class="green_link" href="">VIEW LIVE</a>
+			</div>
+			<div class="work__projectdiv work__movie">
+				<div class="work__projectimgdiv__imgdiv">
+					<img src="public/images/image_movie.png" alt="computer screen with an image of my movie watchlist project">
 				</div>
+				<h4>Web App - Movie Watchlist</h4>
+				<div class="label_language">API</div>
+				<div class="label_language">REACT</div>
+				<div class="label_language">FIREBASE</div>
+				<div class="label_language">COLLABORATIVE</div>
+				<p>Web app that allows the user to search store movie selections.</p>
+				<a class="green_link" href="">VIEW LIVE</a>
+			</div>
+			<div class="scroll_icons_div">
+				<a href="#skills">
+					<div class="up_arrow_imgdiv">
+					</div>
+				</a>
+				<a href="#blog">
+					<div class="down_arrow_imgdiv">
+					</div>
+				</a>
+			</div>
 		</div>
 	</section>
 
@@ -247,6 +330,16 @@
 				<a href="" target="_blank">Read More...</a>
 			</div>
 			<a class="blog__followmedium green_link" href="">Find Me On Medium</a>
+			<div class="scroll_icons_div">
+				<a href="#work">
+					<div class="up_arrow_imgdiv">
+					</div>
+				</a>
+				<a href="#contact">
+					<div class="down_arrow_imgdiv">
+					</div>
+				</a>
+			</div>
 		</div>
 	</section>
 
@@ -292,6 +385,16 @@
 					<input type="submit green_link"><i class="fas fa-paper-plane"></i> Send</input>
 				</div>
 			</form>
+			<div class="scroll_icons_div">
+				<a href="#blog">
+					<div class="up_arrow_imgdiv">
+					</div>
+				</a>
+				<a href="#home">
+					<div class="top_arrow_imgdiv">
+					</div>
+				</a>
+			</div>
 		</div>
 	</section>
 

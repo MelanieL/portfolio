@@ -17,6 +17,7 @@ body {
 	flex-direction: column;
 	max-width: 1250px;
 	margin: 0 auto;
+	position: relative;
 	width: 80%;
 }
 
@@ -132,6 +133,10 @@ li a {
 	height: 100vh;
 }
 
+.about .wrapper {
+	position: relative;
+}
+
 .section_heading h2 {
 	left: -10px;
 }
@@ -181,8 +186,65 @@ li a {
 	width: 100%;
 }
 
+// This is where styling starts for the skills section
 
+.skills {
+	height: 100vh;
+}
 
+.skills__div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 90%;
+}
 
+.skills__know {
+	width: 70%;
+}
 
+.skills__know__grid {
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+}
+
+.skills__tolearn__grid {
+	display: grid;
+	grid-template-columns: 100%;
+}
+
+.skills__languagediv {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 10px 0px;
+}
+
+.skills__languagediv p {
+	align-items: center;
+	display: flex;
+	padding-left: 10px;
+}
+
+.skills__languagediv i {
+	font-size: 22px;
+}
+
+.skills__languagediv__iconborder {
+	align-items: center;
+	border: 1px solid $color2;
+	border-radius: 50%;
+	display: flex;
+	height: 60px;
+	justify-content: center;
+	width: 60px;
+}
+
+.skills__languagediv__iconborder img {
+	width: 100%;
+}
+
+.skills_imgicon_padding {
+	padding: 12px;
+}
 
