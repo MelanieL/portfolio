@@ -30,7 +30,7 @@
 <body>
 	<header id="home">
 		<div class="wrapper">
-			<nav>
+			<nav class="home__nav__desktop">
 				<ul class="header__navul__left">
 					<li><a href="#about">About</a></li>
 					<li><a href="#skills">Skills</a></li>
@@ -45,8 +45,21 @@
 				<ul class="header__navul__right">
 					<li><a href="#blog">Blog</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="">French/Fran&#231;ais</a></li>					
+					<li class="nav_language_desktop"><a href="">French/Fran&#231;ais</a></li>
+					<li class="nav_language_mobile"><a href="">FR</a></li>					
 				</ul>
+			</nav>
+			<nav class="home__nav__mobile">
+				<ul class="header__navul">
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li class="nav_language_desktop"><a href="">French/Fran&#231;ais</a></li>
+					<li class="nav_language_mobile"><a href="">FR</a></li>					
+				</ul>
+				
 			</nav>
 		</div>
 		<div class="header__herodiv">
@@ -56,12 +69,12 @@
 			<div class="header__herodiv__content">
 				<h1>MELANIE PHILLIPS</h1>
 				<h5>Web Developer</h5>
-				<a class="green_link resume_link" href="/public/downloads/resume.pdf" download><i class="fas fa-arrow-circle-down"></i> RESUME.PDF</a>
+				<a class="green_link resume_link" href="/public/downloads/resume.pdf" download>RESUME.PDF</a>
 			</div>
 		</div>
 	</header>
 	
-	<section class="about" id="about">
+	<section class="about snap" id="about">
 		<div class="wrapper">
 			<div class="section_heading">
 				<h1 class="section_number">1</h1>
@@ -70,9 +83,9 @@
 			<p class="subtitle">A little bit about me...</p>
 			<div class="about__maindiv">
 				<div class="about__maindiv__textdiv">
-					<div class="about__maindiv__textdiv__falseborder"></div>
+					<!-- <div class="about__maindiv__textdiv__falseborder"></div> -->
 					<div class="about__maindiv__textdiv__ps">
-						<p>I began professional life younger than most thanks to my bilingual (English/French) skills. I spent 12 years working my way up. But in the last few years, an itch to pursue coding led me to study it in my spare time.<p> 
+						<p>I began professional life younger than most thanks to my bilingual (English/French) skills. I spent 12 years working my way up. But in the last few years, an itch to pursue coding led me to study it in my spare time.</p> 
 
 						<p>Self-discipline allowed me to develop the skills needed to get accepted into HackerYou's Web Development Bootcamp, an intense 9 week program. In late 2017, I left my career to pursue this new path.</p>
 		
@@ -82,7 +95,8 @@
 					</div>
 				</div>
 				<div class="about__maindiv__imgdiv">
-					<img src="public/images/image_algonquin_flipped.jpg" alt="me standing in front of lake covered in mist and a travel coffee in my hand">
+					<img class="about__image__desktop"src="public/images/image_algonquin_flipped.jpg" alt="me standing in front of lake covered in mist and a travel coffee in my hand">
+					<img class="about__image__mobile" src="public/images/image_algonquin_small.jpg" alt="headshot of me with a lake in the background">
 				</div>
 			</div>
 			<div class="scroll_icons_div">
@@ -98,7 +112,7 @@
 		</div>
 	</section>
 	
-	<section class="skills" id="skills">
+	<section class="skills snap" id="skills">
 		<div class="wrapper">
 			<div class="section_heading">
 				<h1 class="section_number">2</h1>
@@ -265,7 +279,7 @@
 	</section>
 
 	<!-- Add overflow scroll to computer images -->
-	<section class="work" id="work">
+	<section class="work snap" id="work">
 		<div class="wrapper">
 			<div class="section_heading">
 				<h1 class="section_number">3</h1>
@@ -277,7 +291,7 @@
 					<div class="work__projectimgdiv__imgdiv">
 						<img src="public/images/image_psd.png" alt="computer screen with an image of my psd conversion">
 					</div>
-					<h4>PSD Conversion - OVER</h4>
+					<h4>Responsive PSD Conversion - OVER</h4>
 					<div class="work__projectdiv__languagebar">
 						<p class="label_language">HTML</p>
 						<p class="label_language">CSS</p>
@@ -285,7 +299,7 @@
 					</div>
 					<p>Responsive design replicated from a PSD file.</p>
 					<div class="view_live_div">
-						<a class="green_link view_live" href="" target="_blank">VIEW LIVE</a>
+						<a class="green_link view_live" href="http://www.melaniephillips.io/over/" target="_blank">VIEW LIVE</a>
 					</div>
 				</div>
 				<div class="work__projectdiv work__quiz">
@@ -300,7 +314,7 @@
 					</div>
 					<p>Quiz that tells the user the pop culture space ship where they would feel the most at home.</p>
 					<div class="view_live_div">
-						<a class="green_link view_live" href="" target="_blank">VIEW LIVE</a>
+						<a class="green_link view_live" href="http://www.melaniephillips.io/spacequiz/" target="_blank">VIEW LIVE</a>
 					</div>
 				</div>
 				<div class="work__projectdiv work__movie">
@@ -316,7 +330,7 @@
 					</div>
 					<p>Web app that allows the user to search and store movie selections.</p>
 					<div class="view_live_div">
-						<a class="green_link view_live" href="" target="_blank">VIEW LIVE</a>
+						<a class="green_link view_live" href="https://project6-2296b.firebaseapp.com/" target="_blank">VIEW LIVE</a>
 					</div>
 				</div>
 			</div>
@@ -333,7 +347,7 @@
 		</div>
 	</section>
 
-	<section class="blog" id="blog">
+	<section class="blog snap" id="blog">
 		<div class="wrapper">
 			<div class="section_heading">
 				<h1 class="section_number">4</h1>
@@ -343,7 +357,6 @@
 			<div class="blog__articledivfull">
 				<div class="blog__blogpostdiv">
 					<div class="blog__blogpostdiv__imgdiv">
-						<!-- Sizing for image: 263 x 250 -->
 						<img src="public/images/image_blog_sketchpost.png" alt="image of blog post headline and some body">
 						<div class="middle">
 							<a href="https://codeburst.io/photoshop-vs-sketch-a-review-for-beginner-web-developers-with-colour-measurement-how-tos-15c5db8b6171" target="_blank">
@@ -353,38 +366,29 @@
 							</a>
 						</div>
 					</div>
-					<a href="https://codeburst.io/photoshop-vs-sketch-a-review-for-beginner-web-developers-with-colour-measurement-how-tos-15c5db8b6171"
-					 target="_blank">Photoshop vs Sketch: A Review for Beginner Web Developers (with Colour & Measurement How-Tos)</a>
+					<div class="blog__articletitlediv">
+						<a href="https://codeburst.io/photoshop-vs-sketch-a-review-for-beginner-web-developers-with-colour-measurement-how-tos-15c5db8b6171"
+						 target="_blank">Photoshop vs Sketch: A Review for Beginner Web Developers (with Colour & Measurement How-Tos)</a>
+					</div>
+					 <p class="blog__postdate">Jan 21 2018</p>
 				</div>
 				<div class="blog__blogpostdiv">
 					<div class="blog__blogpostdiv__imgdiv">
-						<!-- Sizing for image: 263 x 250 -->
-						<img src="public/images/image_blog_sketchpost.png" alt="image of blog post headline and some body">
+						<img src="public/images/image_blog_iotpost.png" alt="image of blog post headline and some body">
 						<div class="middle">
-							<a href="">
+							<a href="https://medium.com/@melaniecp/meet-the-onion-omega-2-the-best-iot-device-for-front-end-developers-e39b619d8056"
+								target="_blank">
 								<div class="blog__hiddenlink green_link">
 									<p>READ MORE...</p>
 								</div>
 							</a>
 						</div>
 					</div>
-					<a href="https://codeburst.io/photoshop-vs-sketch-a-review-for-beginner-web-developers-with-colour-measurement-how-tos-15c5db8b6171"
-					 target="_blank">Photoshop vs Sketch: A Review for Beginner Web Developers (with Colour & Measurement How-Tos)</a>
-				</div>
-				<div class="blog__blogpostdiv">
-					<div class="blog__blogpostdiv__imgdiv">
-						<!-- Sizing for image: 263 x 250 -->
-						<img src="public/images/image_blog_sketchpost.png" alt="image of blog post headline and some body">
-						<div class="middle">
-							<a href="">
-								<div class="blog__hiddenlink green_link">
-									<p>READ MORE...</p>
-								</div>
-							</a>
-						</div>
+					<div class="blog__articletitlediv">
+						<a href="https://medium.com/@melaniecp/meet-the-onion-omega-2-the-best-iot-device-for-front-end-developers-e39b619d8056"
+							target="_blank">Meet the Onion Omega 2: The Best IoT Device for Front-End Developers</a>
 					</div>
-					<a href="https://codeburst.io/photoshop-vs-sketch-a-review-for-beginner-web-developers-with-colour-measurement-how-tos-15c5db8b6171"
-					 target="_blank">Photoshop vs Sketch: A Review for Beginner Web Developers (with Colour & Measurement How-Tos)</a>
+					<p class="blog__postdate">Mar 12 2018</p>
 				</div>
 			</div>
 			<a class="blog__followmedium green_link" href="https://medium.com/@melaniecp/" target="_blank">Find Me On Medium</a>
@@ -401,25 +405,41 @@
 		</div>
 	</section>
 
-	<section class="contact" id="contact">
+	<section class="contact snap" id="contact">
 		<div class="wrapper">
 			<div class="section_heading">
 				<h1 class="section_number">5</h1>
 				<h2>CONTACT</h2>
 			</div>
 			<p class="subtitle">Feel free to contact me with questions, comments and coding jokes...</p>
+			<div class="contact__methodbar__methoddiv contact__smbar">
+				<a class="contact__smicon" href="https://twitter.com/MountainMel" target="_blank">
+					<i class="fab fa-twitter-square fa-2x"></i>
+				</a>
+				<a class="contact__smicon" href="https://medium.com/@melaniecp" target="_blank">
+					<i class="fab fa-medium fa-2x"></i>
+				</a>
+				<a class="contact__smicon" href="https://github.com/MelanieL" target="_blank">
+					<i class="fab fa-github-square fa-2x"></i>
+				</a>
+				<a class="contact__smicon" href="https://www.linkedin.com/in/melanie-phillips-46397763/" target="_blank">
+					<i class="fab fa-linkedin fa-2x"></i>
+				</a>
+			</div>
 			<div class="contact__methodbar">
-				<div class="contact__methodbar__methoddiv">
+				<div class="contact__methodbar__methoddiv contact__address">
 					<div class="contact__methoddiv__imgdiv">
-						<img src="public/images/icon_contact_location.png" alt="">
+						<!-- <img src="public/images/icon_contact_location.png" alt=""> -->
+						<i class="fas fa-map-marker-alt"></i>
 					</div>
 					<p>Hamilton, ON, Canada</p>
 				</div>
-				<div class="contact__methodbar__methoddiv">
-					<div class="contact__methoddiv__imgdiv">
-						<img src="public/images/icon_contact_mail.png" alt="">
+				<div class="contact__methodbar__methoddiv contact__email">
+					<div class="contact__methoddiv__imgdiv contact__email__imgdiv">
+						<!-- <img src="public/images/icon_contact_mail.png" alt=""> -->
+						<i class="fas fa-envelope"></i>
 					</div>
-					<a href="mailto:melanie@melaniephillips.io?subject=Contact%from%melaniephillips.io">melanie@melaniephillips.io
+					<a class="contact_emailink" href="mailto:melanie@melaniephillips.io?subject=Contact%from%melaniephillips.io">melanie@melaniephillips.io
 					</a>
 				</div>
 			</div>
@@ -439,12 +459,8 @@
 				<button class="green_link" type="submit" value=""Send><i class="fas fa-paper-plane"></i> Send</button>
 			</form>
 			<div class="scroll_icons_div">
-				<a href="#blog">
-					<div class="up_arrow_imgdiv">
-					</div>
-				</a>
 				<a href="#home">
-					<div class="top_arrow_imgdiv">
+					<div class="up_arrow_imgdiv">
 					</div>
 				</a>
 			</div>
@@ -454,21 +470,7 @@
 	<footer>
 		<div class="wrapper">
 			<p>&copy;2018 - Melanie Phillips</p>
-			<h3 class="title_font">MP</h3>
-			<div class="footer__smdiv">
-				<a href="https://twitter.com/MountainMel" target="_blank">
-					<i class="fab fa-twitter-square fa-2x"></i>
-				</a>
-				<a href="https://medium.com/@melaniecp" target="_blank">
-					<i class="fab fa-medium fa-2x"></i>
-				</a>
-				<a href="https://github.com/MelanieL" target="_blank">
-					<i class="fab fa-github-square fa-2x"></i>
-				</a>
-				<a href="https://www.linkedin.com/in/melanie-phillips-46397763/" target="_blank">
-					<i class="fab fa-linkedin fa-2x"></i>
-				</a>
-			</div>
+			<!-- <h3 class="title_font">MP</h3> -->
 		</div>
 	</footer>
 
