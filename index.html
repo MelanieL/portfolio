@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115892554-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-115892554-1');
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -56,8 +65,8 @@
 					<li><a href="#work">Work</a></li>
 					<li><a href="#blog">Blog</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li class="nav_language_desktop"><a href="">French/Fran&#231;ais</a></li>
-					<li class="nav_language_mobile"><a href="">FR</a></li>					
+					<li class="nav_language_desktop"><a href="index.html">French/Fran&#231;ais</a></li>
+					<li class="nav_language_mobile"><a href="index.html">FR</a></li>					
 				</ul>
 				
 			</nav>
@@ -69,7 +78,7 @@
 			<div class="header__herodiv__content">
 				<h1>MELANIE PHILLIPS</h1>
 				<h5>Web Developer</h5>
-				<a class="green_link resume_link" href="/public/downloads/resume.pdf" download>RESUME.PDF</a>
+				<a class="green_link resume_link" href="/public/downloads/melanie_phillips_resume.pdf" download>RESUME.PDF</a>
 			</div>
 		</div>
 	</header>
@@ -85,7 +94,7 @@
 				<div class="about__maindiv__textdiv">
 					<!-- <div class="about__maindiv__textdiv__falseborder"></div> -->
 					<div class="about__maindiv__textdiv__ps">
-						<p>I began professional life younger than most thanks to my bilingual (English/French) skills. I spent 12 years working my way up. But in the last few years, an itch to pursue coding led me to study it in my spare time.</p> 
+						<p>I began professional life younger than most thanks to my bilingual (English/French) skills. I spent 12 years working my way up at a manufacturing & distribution company. But in the last few years, an itch to pursue coding led me to study it in my spare time.</p> 
 
 						<p>Self-discipline allowed me to develop the skills needed to get accepted into HackerYou's Web Development Bootcamp, an intense 9 week program. In late 2017, I left my career to pursue this new path.</p>
 		
@@ -291,7 +300,7 @@
 					<div class="work__projectimgdiv__imgdiv">
 						<img src="public/images/image_psd.png" alt="computer screen with an image of my psd conversion">
 					</div>
-					<h4>Responsive PSD Conversion - OVER</h4>
+					<h4>Responsive PSD Conversion</h4>
 					<div class="work__projectdiv__languagebar">
 						<p class="label_language">HTML</p>
 						<p class="label_language">CSS</p>
@@ -449,11 +458,11 @@
 						<input type="text" id="name" name="user_name" placeholder="Your name *" required>
 					</div>
 					<div class="contact__form__emailfield">
-						<input type="email" id="emailAddress" name="_replyto" placeholder="E-mail *" required>
+						<input type="email" id="emailAddress" name="_replyto" placeholder="Your e-mail *" required>
 					</div>
 				</div>
 				<div class="contact__form__messagefield">
-					<textarea name="textarea" rows="10" cols="50" placeholder="Your message here *" required></textarea>
+					<textarea name="textarea" rows="10" cols="50" placeholder="Your message *" required></textarea>
 				</div>
 				<p class="form_required_line"><span class="green">*</span> - required</p>
 				<button class="green_link" type="submit" value=""Send><i class="fas fa-paper-plane"></i> Send</button>

@@ -684,9 +684,6 @@ footer h3 {
 body {
   background: #FFF; }
 
-* {
-  outline: 1px solid red; }
-
 header {
   margin-bottom: 30px; }
 
@@ -1133,7 +1130,7 @@ li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%; }
+  width: 75%; }
 
 .contact__methodbar__methoddiv {
   -webkit-box-align: center;
@@ -1177,8 +1174,7 @@ li a {
 .contact__smbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 2%; }
+          justify-content: center; }
 
 .contact__methodbar__methoddiv svg {
   background: #FFF;
@@ -1407,23 +1403,19 @@ footer .wrapper {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
+  .about__maindiv__textdiv {
+    width: 100%; }
   .skills__div {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
   .skills__know,
   .skills__learn {
-    width: 90%; }
+    width: 100%; }
   .skills__know .subtitle,
   .skills__tolearn .subtitle {
     text-align: center; }
-  .skills__know__grid,
-  .skills__tolearn__grid {
-    margin-left: 11%; }
   .skills__tolearn__grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1453,6 +1445,11 @@ footer .wrapper {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .header__herodiv {
+    background-image: none; }
+  .about p {
+    line-height: 2;
+    margin: 5% 0; }
   .skills__know .subtitle,
   .skills__tolearn .subtitle {
     margin-left: unset;
@@ -1468,4 +1465,35 @@ footer .wrapper {
     grid-template-columns: 100%; }
   .skills__tolearn,
   .skills__know {
-    margin-left: 35%; } }
+    margin-left: 25%; }
+  .contact__methodbar {
+    width: 100%; }
+  .contact__methoddiv__imgdiv {
+    display: none; }
+  .contact__email {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
+  .contact p {
+    text-align: center; }
+  .contact__address p {
+    padding-left: 0;
+    width: 100%; }
+  .contact_emailink {
+    padding-left: 0; }
+  .wrapper form {
+    width: 100%; }
+  .form_required_line {
+    margin-bottom: 10%; } }
+
+@media (max-width: 320px) {
+  header .wrapper {
+    width: 100%; }
+  li, li a {
+    width: unset; }
+  .header__navul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .header__herodiv__content {
+    width: 80%; } }
