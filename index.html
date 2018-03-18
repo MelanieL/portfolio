@@ -17,6 +17,10 @@
 	<link rel="stylesheet" href="./public/styles/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Fira+Sans:300,400,500" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+	 crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+	 crossorigin="anonymous"></script>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="apple-touch-icon" sizes="57x57" href="public/images/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="public/images/apple-touch-icon-60x60.png">
@@ -39,6 +43,7 @@
 <body>
 	<header id="home">
 		<div class="wrapper">
+
 			<nav class="home__nav__desktop">
 				<ul class="header__navul__left">
 					<li><a href="#about">About</a></li>
@@ -58,8 +63,9 @@
 					<li class="nav_language_mobile"><a href="">FR</a></li>					
 				</ul>
 			</nav>
-			<nav class="home__nav__mobile">
-				<ul class="header__navul">
+
+			<!-- <nav class="home__nav__mobile"> -->
+				<!-- <ul class="header__navul">
 					<li><a href="#about">About</a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#work">Work</a></li>
@@ -67,9 +73,30 @@
 					<li><a href="#contact">Contact</a></li>
 					<li class="nav_language_desktop"><a href="index.html">French/Fran&#231;ais</a></li>
 					<li class="nav_language_mobile"><a href="index.html">FR</a></li>					
-				</ul>
-				
-			</nav>
+				</ul> -->
+					<nav class="home__nav__mobile">
+						<ul>
+							<li class="hamburger__menu" tab-index="0">
+								<a href="">
+									<div class="hamburger__menu__imgdiv">
+										<!-- The commented out line is if you would rather use an image over using font-awesome -->
+										<!-- <img src="./public/images/icon_hamburger.png" alt=""> -->
+										<i class="fas fa-bars fa-2x"></i>
+									</div>
+								</a>
+								<ul class="hamburger__menu__content">
+									<li><a href="#about">ABOUT</a></li>
+									<li><a href="#skills">SKILLS</a></li>
+									<li><a href="#work">WORK</a></li>
+									<li><a href="#blog">BLOG</a></li>
+									<li><a href="#contact">CONTACT</a></li>
+									<li><a href="index.html">FRENCH SITE</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+			<!-- </nav> -->
+
 		</div>
 		<div class="header__herodiv">
 			<!-- <div class="header__herodiv__shapesimgdiv">

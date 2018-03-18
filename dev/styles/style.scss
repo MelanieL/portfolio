@@ -2,6 +2,7 @@
 @import 'components/base';
 @import 'components/typography';
 @import 'components/ui';
+@import 'components/hamburger';
 
 body {
 	background: $color1;
@@ -741,13 +742,22 @@ footer .wrapper {
 		display: none;
 	}
 
-	.home__nav__mobile {
-		display: unset;
-		text-align: center;
-	}
-
 	.home__nav__desktop {
 		display: none;
+	}
+	
+	.home__nav__mobile {
+		display: flex;
+		// width: unset;
+	}
+	
+	.home__nav__mobile ul {
+		background: $color1;
+		flex-direction: column;
+	}
+
+	header {
+		padding-top: 16px;
 	}
 
 	.header__herodiv {
