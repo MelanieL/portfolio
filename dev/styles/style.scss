@@ -40,12 +40,17 @@ footer {
 	position: relative;
 }
 
+// .section_heading_fr {
+// 	text-align: center;
+// }
+
 .section_heading h1 {
 	line-height: 0.68;
 }
 
 .section_heading h2 {
 	bottom: 15px;
+	left: -10px;
 	position: absolute;
 }
 
@@ -69,6 +74,10 @@ header h3 {
 	margin: 0px 94px;
 }
 
+.title_font_fr {
+	margin: 0px 40px;
+}
+
 .header__smtitlediv {
 	position: relative;
 }
@@ -77,6 +86,10 @@ header h3 {
 	left: 108px;
 	position: absolute;
 	top: 82px;
+}
+
+.triangle_fr {
+	left: 53px;
 }
 
 nav, ul {
@@ -105,8 +118,17 @@ li a {
 	text-align: right;
 }
 
+.header__navul__left__fr {
+	text-align: center;
+}
+
+
 .header__navul__right {
 	text-align: left;
+}
+
+.header__navul__right__fr {
+	text-align: center;
 }
 
 .nav_language_mobile {
@@ -151,12 +173,13 @@ li a {
 	height: 100vh;
 }
 
-.about .wrapper {
-	position: relative;
+.about .section_heading_fr h2 {
+	left: -26px;
+	width: 150px;
 }
 
-.section_heading h2 {
-	left: -10px;
+.about .wrapper {
+	position: relative;
 }
 
 .about__maindiv {
@@ -210,6 +233,10 @@ li a {
 
 .skills .section_heading h2 {
 	left: -5px;
+}
+
+.skills .section_heading_fr h2 {
+	left: -53px;
 }
 
 .skills__div {
@@ -279,6 +306,10 @@ li a {
 	left: 1px;
 }
 
+.work .section_heading_fr h2 {
+	left: -13px;
+}
+
 .work__projectdivfull {
 	display: flex;
 	flex-direction: row;
@@ -290,6 +321,10 @@ li a {
 .work__projectdiv {
 	height: 100%;
 	width: 25%;
+}
+
+.work__quiz__fr .view_live_div {
+	margin-top: 25%;
 }
 
 .work__projectimgdiv__imgdiv {
@@ -351,6 +386,10 @@ li a {
 
 .blog .section_heading h2 {
 	left: 12px;
+}
+
+.blog .section_heading_fr h2 {
+	left: -9px;
 }
 
 .blog__articledivfull {
@@ -437,6 +476,10 @@ li a {
 	margin-top: 2%;
 }
 
+.blog__followmedium__fr {
+	width: 250px;
+}
+
 // This is where the styling begins for the contact section
 
 .contact {
@@ -445,6 +488,11 @@ li a {
 
 .contact .wrapper {
 	height: 100vh;
+}
+
+.contact .section_heading_fr h2 {
+	left: -60px;
+	width: 190px;
 }
 
 .contact__methodbar {
@@ -458,13 +506,14 @@ li a {
 	align-items: center;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	margin: 5px 30px;
-	width: 48%;
+	width: 100%;
 }
 
 .contact__methodbar__methoddiv p,
 .contact_emailink {
-	padding-left: 5%;
+	padding-left: 2%;
 }
 
 .contact__methoddiv__imgdiv {
