@@ -299,7 +299,7 @@ li a {
 // This is where styling begins for the portfolio section
 
 .work {
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .work .section_heading h2 {
@@ -312,15 +312,15 @@ li a {
 
 .work__projectdivfull {
 	display: flex;
-	flex-direction: row;
-	height: 65vh;
+	flex-direction: column;
 	justify-content: space-around;
 	margin-top: 2%;
 }
 
 .work__projectdiv {
-	height: 100%;
-	width: 25%;
+	display: flex;
+	flex-direction: row;
+	margin: 5% 0;
 }
 
 .work__quiz__fr .view_live_div {
@@ -328,16 +328,22 @@ li a {
 }
 
 .work__projectimgdiv__imgdiv {
-	width: 100%;
+	width: 50%;
 }
 
 .work__projectimgdiv__imgdiv img {
 	width: 100%;
 }
 
+.work__projectdiv__description {
+	padding: 0 5%;
+	width: 50%;
+}
+
 .work__projectdiv__languagebar {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
@@ -731,8 +737,16 @@ footer .wrapper {
 	}
 
 	.work__projectdiv {
+		align-items: center;
+		flex-direction: column;
 		width: 80%;
 	}
+
+	.work__projectimgdiv__imgdiv,
+	.work__projectdiv__description {
+		width: 80%;
+	}
+
 
 	.work__projectdiv h4 {
 		margin: 3% 0;
